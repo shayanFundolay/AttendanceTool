@@ -1,0 +1,106 @@
+
+.form-control {
+    font-size: 12px;
+}
+
+.vertical-align-middle {
+    overflow: hidden;
+}
+.brand-img {
+    margin-left: -16px;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.font-weight__300{
+  font-weight: 300;
+}
+.font-weight__500{
+  font-weight: 500;
+}
+.font-weight__700{
+  font-weight: 700;
+}
+.bg_primary{
+  background: #fab637;
+}
+.font-text__primary{
+  color:#fab637;
+}
+.has-padding__40{
+  padding:40px 0;
+}
+.has-padding__25{
+  padding:25px;
+}
+.has-shadow{
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+}
+.no-borders{
+  border: none;
+}
+.no-border__radius{
+  border-radius: 0;
+}
+.card-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -10px;
+  margin-top: -66px;
+background: linear-gradient(to bottom, rgba(0,123,255,1) 0%,rgba(41,137,216,1) 50%,rgba(32,124,202,1) 100%,rgba(125,185,232,1) 100%);
+}
+.form-group__label{
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  color: #9a9a9a;
+  transition: 0.50ms ease-in;
+}
+.form-group__input{
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  border-radius: 0;
+  color: #888;
+  transition: 0.50ms ease-in;
+
+  &:focus{
+    box-shadow: none;
+    border-color:#2381d0;
+    + .form-group__label{
+      color: #2381d0 !important;
+    }
+  }
+ 
+}
+
+.main-content {
+  margin-top: -60px;
+}
+.brand-text{
+
+  display: block;
+}
+.brand-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+.btn-custom__primary{
+  padding: 15px 40px !important;
+  font-size:15px !important;
+  border: 1px solid #2786d5;
+  background: #2381d0;
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+  transform: 0.50ms ease-in;
+  border-radius: 0 !important;
+
+  &:hover{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  }
+}

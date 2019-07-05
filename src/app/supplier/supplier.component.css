@@ -1,0 +1,17 @@
+.FixedButton {
+    position: fixed;
+    bottom: 0;
+   
+    padding: 10px;
+}
+.page {
+    text-align: center;
+}
+/* 
+.btn-primary {
+    position: absolute;
+    top: 60%;
+} */
+.modal-content {
+    width: 70%
+} 

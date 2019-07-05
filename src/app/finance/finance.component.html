@@ -1,0 +1,169 @@
+<div class="page">
+  <img class="img" src="../assets/img/expense.png">
+
+  <div class="zero-state-content">
+    <div>
+      <span class="main-title">
+        <strong>
+          <h3>
+
+          </h3>
+        </strong>
+      </span>
+    </div>
+  </div>
+  <button class="btn btn-primary" data-target="#exampleFillIn" data-toggle="modal" type="button" >Add an expense</button>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal-fill-in" id="exampleFillIn" aria-hidden="false" aria-labelledby="exampleFillIn"
+  role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-simple">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="exampleFillInModalTitle">Expense</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col-xl-6 form-group"> Payee
+              <input type="text" class="form-control" name="payee" placeholder="Payee" required>
+            </div>
+            <div class="col-xl-6 form-group"> Payment Account
+              <input type="text" class="form-control" name="payment_account" placeholder="Payment Account" required>
+            </div>
+            <div class="col-xl-4 form-group"> Payment Date
+              <input type="date" class="form-control" name="payment_date" required>
+            </div>
+            <div class="col-xl-4 form-group"> Payment Method
+              <select name="payment_method" id="1" class="form-control">
+                <option value="cash">
+                  Cash
+                </option>
+                <option value="cash">
+                  Cheque
+                </option>
+                <option value="cash">
+                  Debit/Credit
+                </option>
+                <option value="cash">
+                  Wallet
+                </option>
+              </select>
+
+            </div>
+            <div class="col-xl-4 form-group"> Reference No.
+              <input type="text" class="form-control" name="ref" placeholder="XPR-1XXX">
+            </div>
+            <div class="col-xl-8 form-group"> Memo
+              <textarea class="form-control" rows="5" placeholder="Type your Memo"></textarea>
+            </div>
+            <div class="col-xl-4 form-group">
+              <label for=""> Attachment
+
+              </label>
+              <input type="file" class="form-control">
+            </div>
+
+          </div>
+          <div class="example table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Category</th>
+                  <th>description</th>
+                  <th>Amount</th>
+                  <th width="10px" class="text-nowrap">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> 1</td>
+                  <td>
+                    <select name="" id="" class="form-control" placeholder="What tax Category fits?">
+                      <option value="bad_debt">Bad Debt</option>
+                      <option value="bank"> Bank Charges</option>
+                      <option value="fees"> Commission and Fees</option>
+                      <option value="rent"> Rental</option>
+                      <option value="debt"> Debt</option>
+
+                    </select>
+                  </td>
+                  <td class="pay_for">
+                    <input type="text" class="form-control" placeholder="What did you pay for?">
+
+                  </td>
+                  <td>5000</td>
+
+                  <td class="text-nowrap">
+                    <button type="button" class="btn btn-sm btn-icon btn-flat btn-default waves-effect waves-classic"
+                      data-toggle="tooltip" data-original-title="Edit">
+                      <i class="icon md-wrench" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-icon btn-flat btn-default waves-effect waves-classic"
+                      data-toggle="tooltip" data-original-title="Delete">
+                      <i class="icon md-close" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>
+                    <select name="" id="" class="form-control" placeholder="What tax Category fits?">
+                      <option value="bad_debt">Bad Debt</option>
+                      <option value="bank"> Bank Charges</option>
+                      <option value="fees"> Commission and Fees</option>
+                      <option value="rent"> Rental</option>
+                      <option value="debt"> Debt</option>
+                    </select>
+                  </td>
+                  <td class="pay_for">
+                    <input type="text" class="form-control" placeholder="What did you pay for?">
+                  </td>
+
+                  <td>75000</td>
+
+                  <td class="text-nowrap">
+                    <button type="button" class="btn btn-sm btn-icon btn-flat btn-default waves-effect waves-classic"
+                      data-toggle="tooltip" data-original-title="Edit">
+                      <i class="icon md-wrench" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="btn btn-sm btn-icon btn-flat btn-default waves-effect waves-classic"
+                      data-toggle="tooltip" data-original-title="Delete">
+                      <i class="icon md-close" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+            <div class="button">
+              <button type="button" value="" class="btn btn-default btn-sm mr-1" name="submit">
+                Add Lines
+              </button>
+              <button type="button" value="" class="btn btn-default btn-sm mr-1" name="submit">
+                Cancel Lines
+              </button>
+              <button type="button" value="" class="btn btn-default btn-sm mr-1" name="submit">
+                Add Total
+              </button>
+            </div>
+            <hr>
+            <p class="text-center"> Privacy Policy</p>
+          </div>
+          <div class="FixedButton">
+            <button type="button" class="btn btn-danger mr-5"> Cancel</button>
+            <button type="button" class="btn btn-success">Save</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->

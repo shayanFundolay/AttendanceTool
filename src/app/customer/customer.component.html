@@ -1,0 +1,126 @@
+<div class="page">
+  <img class="icon" src="../assets/img/customere.png">
+
+  <div class="zero-state-content">
+    <div>
+      <span class="main-title">
+        <strong>
+          <h3>
+
+          </h3>
+        </strong>
+      </span>
+    </div>
+  </div>
+
+  <button class="btn btn-primary btn-sm  " data-target="#exampleFillIn" data-toggle="modal" type="button" style="margin-left:-46px;">Add a
+    Customer</button>
+
+</div>
+<div class="modal fade modal-fill-in" id="exampleFillIn" aria-hidden="false" aria-labelledby="exampleFillIn"
+  role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-simple">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="exampleFillInModalTitle">Customer Information</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+
+          <div style="height:70vh ;overflow:scroll; overflow-x: hidden">
+            <div class="row">
+              <div class="col-xl-4 form-group"> Title
+                <input type="text" class="form-control" name="title" placeholder="MR / Mrs">
+              </div>
+              <div class="col-xl-4 form-group"> First Name
+                <input type="text" class="form-control" name="first_name" required>
+              </div>
+
+              <div class="col-xl-4 form-group"> Last Name
+                <input type="text" class="form-control" name="last_name" required>
+              </div>
+
+              <div class="col-xl-12 form-group"> Display Name As
+                <input type="text" class="form-control" name="display_name" required>
+
+              </div>
+              <div class="col-xl-12 form-group"> Address
+                <textarea name="address" cols="3" rows="3" class="form-control" placeholder="Address"
+                  required></textarea>
+
+              </div>
+              <div class="col-xl-6 form-group"> City / Town
+                <input type="text" class="form-control" name="city" placeholder="Karachi" required>
+
+              </div>
+              <div class="col-xl-6 form-group"> State / Province
+                <input type="text" class="form-control" name="state" placeholder="Sindh" required>
+
+              </div>
+              <div class="col-xl-6 form-group"> Postal code
+                <input type="text" class="form-control" name="postal_code" placeholder="75XXX" required>
+
+              </div>
+              <div class="col-xl-6 form-group"> Country
+                <input type="text" class="form-control" name="country" placeholder="Pakistan" required>
+
+              </div>
+              <div class="col-xl-12 form-group"> Notes
+
+                <textarea name="notes" cols="6" rows="3" class="form-control" placeholder="Notes"></textarea>
+
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-xl-12 form-group"> Email
+                <input type="email" class="form-control" name="email" placeholder="example@example.com" required>
+              </div>
+              <div class="col-xl-6 form-group"> Phone
+                <input type="tel" class="form-control" name="phone" placeholder="02X-XXXXXXXX">
+              </div>
+              <div class="col-xl-6 form-group">Mobile
+                <input type="tel" class="form-control" name="mobile" placeholder="03XX-XXXXXXX" required>
+              </div>
+
+              <div class="col-xl-4 form-group"> Customer CNIC
+                <input type="number" class="form-control" name="customer_cnic" placeholder="xxxxx-xxxxxxx-x" required>
+              </div>
+              <div class="col-xl-4 form-group"> Customer ID No.
+                <input type="text" class="form-control" name="csustomer_id" placeholder="XPR-10001">
+              </div>
+              <div class="col-xl-4 form-group"> Gender
+                <select name="" id="" class="form-control">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="col-xl-4 form-group"> Hire Date
+                <input type="date" class="form-control" name="hire_date" placeholder="Hire Date">
+              </div>
+              <div class="col-xl-4 form-group"> Released Date
+                <input type="date" class="form-control" name="release_date" placeholder="Released Date">
+              </div>
+              <div class="col-xl-4 form-group"> Date of Birth
+                <input type="date" class="form-control" name="dob" placeholder="Date of Birth" required>
+              </div>
+
+            </div>
+            <hr>
+            <p class="text-center"> Privacy Policy</p>
+
+          </div>
+          <div class="FixedButton">
+            <button type="button" class="btn btn-danger mr-5"> Cancel</button>
+            <button type="button" class="btn btn-success">Save</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+<div class="page">
+  <img class="icon" src="../assets/img/sales.png">
+  <div class="zero-state-content">
+    <div>
+      <span class="main-title">
+        <strong>
+          <h3>
+            Keep tabs on your sales, plus send and track invoices
+          </h3>
+        </strong>
+
+      </span>
+    </div>
+
+  </div>
+  <button class="btn btn-primary" data-target="#exampleFillIn" data-toggle="modal" type="button">Create an
+    Invoice</button>
+
+</div>
+<!-- Modal -->
+<div class="modal fade modal-fill-in" id="exampleFillIn" aria-hidden="false" aria-labelledby="exampleFillIn"
+  role="dialog" tabindex="-1">
+  <div class="modal-dialog modal-simple">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="exampleFillInModalTitle">Sales</h4>
+      </div>
+      <div class="modal-body">
+
+        <form action="" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-xl-6 form-group"> Customer
+              <input type="text" class="form-control" name="customer">
+            </div>
+            <div class="col-xl-6 form-group"> Email
+              <input type="email" class="form-control" name="customer_email" placeholder="Customer Email" required>
+              <span>
+                <div class="checkbox">
+                  <input type="checkbox" unchecked> Send Later
+                </div>
+              </span>
+            </div>
+            <div class="col-xl-3 form-group"> Billing Address
+              <textarea class="form-control" cols="3" rows="3" placeholder="Billing Address"
+                name="St-5, DHA"></textarea>
+            </div>
+            <div class="col-xl-3 form-group"> Terms
+              <select name="terms" class="form-control" placeholder="Terms">
+                <!-- <option *ngFor="let term of terms" [value]="term.id">{{term.display_name}}</option> -->
+                <option value="">Net 30</option>
+                <option value="">Net 50</option>
+                <option value="">Net 60</option>
+                <option value="">Debt</option>
+              </select>
+
+            </div>
+            <div class="col-xl-3 form-group"> Invoice Date
+              <input type="date" class="form-control" name="date">
+            </div>
+            <div class="col-xl-3 form-group"> Due Date
+              <input type="date" class="form-control" name="due_date">
+            </div>
+
+          </div>
+          <div class="example table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product/Service</th>
+                  <th>Description</th>
+                  <th>QTY</th>
+                  <th>Rate</th>
+                  <th>Amount</th>
+                  <th width="10px" class="text-nowrap">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>abc</td>
+                  <td>xyz</td>
+                  <td>3</td>
+                  <td>5000</td>
+                  <td>6000</td>
+                  <td>Yes</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+            <div class="button">
+              <button type="button" value="" class="btn btn-default btn-sm mr-1" name="Add">
+                Add Lines
+              </button>
+              <button type="button" value="" class="btn btn-default btn-sm mr-1" name="Cancel">
+                Cancel Lines
+              </button>
+              <button type="button" value="" class="btn btn-default btn-sm mr-1" name="Total">
+                Add Total
+              </button>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 form-group">
+                <label for="">
+                  Message on invoice
+                </label>
+                <textarea class="form-control" rows="3" placeholder="This will show on invoice"
+                  name="message_on_invoice">
+
+                        </textarea>
+              </div>
+              <div class="col-xl-6 form-group">
+                <label for="">
+                  Message on Statement
+                </label>
+                <textarea class="form-control" rows="3" placeholder="This will show on Statement"
+                  name="message_on_statement">
+
+                            </textarea>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->

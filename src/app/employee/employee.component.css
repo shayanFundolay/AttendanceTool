@@ -1,0 +1,38 @@
+.page {
+    text-align: center;
+}
+
+
+.btn-primary {
+    float: left;
+    margin: 30px ;
+}
+.modal-content {
+    width: 70%;
+}
+
+.page .employee-icon {
+position: absolute;
+text-align: center;
+top: 40%;
+}
+
+.pagination{
+    text-align: center;
+}
+.table {
+    background-color: #fff;
+}
+/* .employee-png {
+
+position: absolute;
+top: 40%;
+padding-right: 10px;
+} */
+
+/* .heading h3{
+text-align: center;
+position: absolute;
+top: 45%;
+padding: 0px 200px;
+} */

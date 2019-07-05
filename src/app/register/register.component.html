@@ -1,0 +1,61 @@
+<div class="main-content">
+  <div class="container-fluid card-wrapper">
+    <div class="panel">
+      <div class="panel-body">
+        <div class="brand">
+          <img class="brand-img" src="../assets/img/xoop-logo (1).jpg" alt="...">
+        </div>
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" method="post" action="#" autocomplete="off">
+          <div class="form-group form-material floating" data-plugin="formMaterial">
+            <select name="register_as" id="" class="form-control">
+              <option value="employee">Xoop Employee</option>
+              <option value="admin">Admin</option>
+              <option value="User"> User</option>
+              <option value="line_manager"> Line Manager</option>
+
+            </select>
+            <label class="floating-label">Register As.</label>
+          </div>
+
+          <div class="form-group form-material floating" data-plugin="formMaterial">
+            <input type="text" class="form-control" formControlName="firstName"
+              [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+              <div *ngIf="f.firstName.errors.required">First Name is required</div>
+            </div>
+            <label class="floating-label">First Name</label>
+          </div>
+          
+          <div class="form-group form-material floating" data-plugin="formMaterial">
+            <input type="text" class="form-control" formControlName="lastName"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+              <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+            </div>
+            <label class="floating-label">Last Name</label>
+          </div>
+          <div class="form-group form-material floating" data-plugin="formMaterial">
+            <input type="email" class="form-control" formControlName="email"
+              [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+            <div *ngIf="submitted && email.errors" class="invalid-feedback">
+              <div *ngIf="email.errors.required">Email is required</div>
+            </div>
+            <label class="floating-label">Email</label>
+          </div>
+          <div class="form-group form-material floating" data-plugin="formMaterial">
+            <input type="password" class="form-control" formControlName="password"
+              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Password is required</div>
+              <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+            </div>
+            <label class="floating-label">Password</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-md mt-40">Sign up</button>
+        </form>
+        <p>Have account already? Please go to <a href="login">Sign In</a></p>
+      </div>
+    </div>
+  </div>
+</div>

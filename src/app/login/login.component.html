@@ -1,0 +1,44 @@
+<div class="main-content">
+    <div class="container-fluid card-wrapper">
+        <div class="panel">
+            <div class="panel-body">
+                <div class="brand">
+                    <img class="brand-img" src="../assets/img/xoop-logo (1).jpg" alt="...">
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" method="post" action="#" autocomplete="off">
+                    <div class="form-group form-material floating" data-plugin="formMaterial">
+                        <input type="text" formControlName="username" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+                        <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                            <div *ngIf="f.username.errors.required">Username is required</div>
+                        </div>
+                        <label for="username" class="floating-label">Username</label>
+                    </div>
+                    <div class="form-group form-material floating" data-plugin="formMaterial">
+                        <input type="password" formControlName="password" class="form-control"
+                            [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+
+                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                            <div *ngIf="f.password.errors.required">Password is required</div>
+                        </div>
+                        <label for="password" class="floating-label">Password</label>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="checkbox-custom checkbox-inline checkbox-primary checkbox-lg float-left">
+                            <input type="checkbox" id="inputCheckbox" name="remember">
+                            <label for="inputCheckbox">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-md mt-40" routerLink='/index.html'> Sign
+                            in</button>
+                    </div>
+
+
+                </form>
+                <div>
+                    <p>Still no account? Please go to <a href="register">Sign up</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
